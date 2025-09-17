@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Farming</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+
+    <style>
+      /* Warna garis kiri card */
+      .border-left-primary {
+        border-left: 5px solid #0d6efd; /* primary */
+      }
+
+      .border-left-success {
+        border-left: 5px solid #198754; /* success */
+      }
+
+      .border-left-info {
+        border-left: 5px solid #0dcaf0; /* info */
+      }
+
+      .border-left-warning {
+        border-left: 5px solid #ffc107; /* warning */
+      }
+
+      .border-left-danger {
+        border-left: 5px solid #dc3545; /* danger */
+      }
+
+      /* Gaya angka/nilai */
+      .card-value {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="text-dark mb-5">Smart Farming</h1>
+
+      <div class="row g-4">
+        <!-- Kelembaban -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary mb-2">KELEMBABAN (RH)</h6>
+              <p class="card-value text-primary mb-0">54 %</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- TDS -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-success">
+            <div class="card-body">
+              <h6 class="card-title text-success mb-2">TDS</h6>
+              <p class="card-value mb-0">400 ppm</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kekeruhan -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-info">
+            <div class="card-body">
+              <h6 class="card-title text-info mb-2">KEKERUHAN (TURBID)</h6>
+              <p class="card-value mb-2">18 NTU</p>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 18%"
+                  aria-valuenow="18"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temperatur Air -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-warning">
+            <div class="card-body">
+              <h6 class="card-title text-warning mb-2">
+                TEMPERATUR AIR (WTEMP)
+              </h6>
+              <p class="card-value mb-0">25 C</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oksigen Terlarut -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-primary">
+            <div class="card-body">
+              <h6 class="card-title text-primary mb-2">
+                OKSIGEN TERLARUT (DISS.OXYGEN)
+              </h6>
+              <p class="card-value mb-0">10 ppm</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Intensitas Cahaya -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-success">
+            <div class="card-body">
+              <h6 class="card-title text-success mb-2">
+                INTENSITAS CAHAYA (LUX)
+              </h6>
+              <p class="card-value mb-0">100 Lux</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Temperatur Udara -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-info">
+            <div class="card-body">
+              <h6 class="card-title text-info mb-2">
+                TEMPERATUR UDARA (AMTEMP)
+              </h6>
+              <p class="card-value mb-2">34 C</p>
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 34%"
+                  aria-valuenow="34"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EC -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-warning">
+            <div class="card-body">
+              <h6 class="card-title text-warning mb-2">EC</h6>
+              <p class="card-value mb-0">2</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Aliran Air -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-danger">
+            <div class="card-body">
+              <h6 class="card-title text-danger mb-2">ALIRAN AIR (WFLOW)</h6>
+              <p class="card-value mb-0">34</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PH -->
+        <div class="col-md-3">
+          <div class="card h-100 border-left-danger">
+            <div class="card-body">
+              <h6 class="card-title text-danger mb-2">PH</h6>
+              <p class="card-value mb-0">7.1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
